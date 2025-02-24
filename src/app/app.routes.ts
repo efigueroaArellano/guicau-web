@@ -5,31 +5,31 @@ import { VisorReporteComponent } from './modules/public/visor-reporte/visor-repo
 const privado : string = 'privado/';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'visor-reporte', pathMatch: 'full' },
+    // { path: '', redirectTo: 'visor-reporte', pathMatch: 'full' },
 
-    //Publico
-    {
-        path: 'publico',
-        children: [
-            {
-                path: '',
-                redirectTo: 'visor-reporte',
-                pathMatch: 'full',
-            },
-            {
-                path: 'visor-reporte',
-                component: VisorReporteComponent,
-            },
-            {
-                path: 'visor-reporte/:curp',
-                component: VisorReporteComponent,
-            },
-        ],
-    },
 
-    {
-        path: '**',
-        redirectTo: 'publico',
-    }
+    // {
+    //     path: 'publico',
+    //     children: [
+    //         {
+    //             path: '',
+    //             redirectTo: 'visor-reporte',
+    //             pathMatch: 'full',
+    //         },
+    //         {
+    //             path: 'visor-reporte',
+    //             component: VisorReporteComponent,
+    //         },
+    //         {
+    //             path: 'visor-reporte/:curp',
+    //             component: VisorReporteComponent,
+    //         },
+    //     ],
+    // },
+
+    // {
+    //     path: '**',
+    //     redirectTo: 'publico',
+    // }
 
 ];

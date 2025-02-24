@@ -21,7 +21,7 @@ import { LoaderComponent } from './shared/components/loader/loader.component';
 })
 export class AppComponent {
 
-    title = 'guiriep-web';
+    title = 'guicau-web';
 
     constructor(private primengConfig: PrimeNGConfig, private translateService: TranslateService) { }
 

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "guiriep-web": {
+    "guicau-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/guiriep-web",
+            "outputPath": "dist/guicau-web",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "guiriep-web:build:production"
+              "buildTarget": "guicau-web:build:production"
             },
             "development": {
-              "buildTarget": "guiriep-web:build:development"
+              "buildTarget": "guicau-web:build:development"
             }
           },
           "defaultConfiguration": "development"
