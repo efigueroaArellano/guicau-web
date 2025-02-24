@@ -1,0 +1,38 @@
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: var(--verde-tono10);
+  border-color: var(--verde-tono11);
+  color: var(--blanco-tono1);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: var(--gris-tono6);
+  border-color: var(--verde-tono11);
+  color: var(--gris-tono7);
+}
+
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+  background: var(--blanco-tono4);
+  border-color: var(--verde-tono11);
+  color: var(--gris-tono7);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.p-tabview .p-tabview-nav {
+  border-bottom: 1px solid var(--verde-tono11);
+}
+
+.p-tabview-nav-link {
+  height: 33px;
+}
+
+.p-tabview .p-tabview-panels {
+  padding: 1.25rem 0rem !important;
+}

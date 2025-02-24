@@ -1,0 +1,36 @@
+.p-inputswitch .p-inputswitch-slider {
+  background: var(--gob-mx-base-blanco);
+  border: 1px solid var(--verde-tono15);
+}
+
+.p-inputswitch.p-disabled .p-inputswitch-slider {
+  border: 1px solid var(--verde-tono13);
+}
+.p-inputswitch-checked.p-disabled .p-inputswitch-slider {
+  background-color: var(--verde-tono13);
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+  background: var(--verde-tono15);
+  &:before {
+    background-color:var(--gob-mx-base-blanco) !important;
+  }
+}
+
+.p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+  background: var(--verde-tono15);;
+}
+.p-inputswitch .p-inputswitch-slider:before {
+  background-color: var(--verde-tono15);;
+}
+
+.p-inputswitch.p-disabled .p-inputswitch-slider:before {
+  background-color: var(--verde-tono13);
+}
+
+.p-inputswitch:not(.p-disabled):hover .p-inputswitch-slider {
+  background-color: var(--verde-tono15);
+  &:before {
+    background-color: var(--gob-mx-base-blanco);
+  }
+}

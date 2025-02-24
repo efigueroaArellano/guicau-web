@@ -1,0 +1,28 @@
+:host {
+    flex-grow: 1;
+}
+
+.content {
+    position: relative;
+}
+
+.alert-icon {
+    padding-top: .4rem;
+    position: absolute;
+}
+
+.alert-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.alert-details {
+    padding-top: .4rem;
+    font-size: 14px;
+    // font-weight: 500;
+}
+
+.success .alert-title,
+.success .alert-details {
+    color: var(--verde-tono6);
+}

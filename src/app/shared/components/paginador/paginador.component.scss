@@ -1,0 +1,36 @@
+/* Selector profundo para modificar los botones del paginador */
+::ng-deep .p-paginator-prev::after {
+    content: ' Anterior';
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+::ng-deep .p-paginator-next::before {
+    content: 'Siguiente ';
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* Aseguramos que las flechas estén visibles junto a los textos */
+::ng-deep .p-paginator-prev .p-paginator-icon::before {
+    content: '<';
+}
+
+::ng-deep .p-paginator-next .p-paginator-icon::before {
+    content: '>';
+}
+
+
+@media only screen and (max-width: 992px) {
+    ::ng-deep .p-paginator-next::before {
+        content: '';
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    ::ng-deep .p-paginator-prev::after {
+        content: '';
+        font-size: 14px;
+        margin-left: 5px;
+    }
+}

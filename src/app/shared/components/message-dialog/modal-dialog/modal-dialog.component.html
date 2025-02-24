@@ -1,0 +1,41 @@
+<p-dialog [(visible)]="isVisible" [modal]="true" [style]="{maxWidth:'650px', width: '100%'}"
+    [draggable]="false" [resizable]="false" [styleClass]="dialogStyleClass" closable="false">
+    
+    <!-- Encabezado del diálogo -->
+    <ng-template pTemplate="header">
+        <div class="inline-flex align-items-center justify-content-center gap-2">
+            <p-avatar *ngIf="tipoModal === tipoModalEnum.SESION_POR_EXPIRAR" class="m-1" image="../../../../assets/images/dialog/reloj.svg" shape="circle" alt="" />
+            <span class="font-medium header-subtitles white-space-nowrap line-height-1 ml-2" [innerHTML]="titulo"></span>
+        </div>
+    </ng-template>
+
+    <!-- Contenido del diálogo -->
+    <ng-template pTemplate="content">
+        <div class="flex justify-content-center align-items-center text-center gap-2 py-8">
+            <span [innerHTML]="mensajeHtml" class="text-center"></span>
+        </div>
+    </ng-template>
+
+    <!-- Pie del diálogo con botones -->
+    <ng-template pTemplate="footer">
+        <div class="flex justify-content-end px-4">
+            <ng-container *ngIf="isCancelar">
+                <button class="button-secondary form-group" (click)="cancelar()">Cancelar</button>
+            </ng-container>
+            <ng-container *ngIf="isAceptar || isContinuar">
+                <span *ngIf="isCancelar" class="px-4"></span>
+                <button 
+                    class="button-primary form-group border-round-xl font-medium"
+                    [innerHTML]="botonTexto"
+                    (click)="aceptar()">
+                </button>
+            </ng-container>
+        </div>
+        <ng-container *ngIf="tipoModal === tipoModalEnum.INFO && !isAceptar && !isContinuar && !isCancelar">
+            <div class="text-center">
+                <button class="button-secondary form-group" style="min-width: 30%;" (click)="onSalir()">Salir</button>
+            </div>
+        </ng-container>
+    </ng-template>
+
+</p-dialog>

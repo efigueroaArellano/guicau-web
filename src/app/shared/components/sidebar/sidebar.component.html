@@ -1,0 +1,26 @@
+@if (!isMobile){
+    <div class="desktop-sidebar">
+        <app-menu-list></app-menu-list>
+    </div>
+}
+
+@if(isMobile){
+    <button pButton type="button" class="menu-button" (click)="toggleSidebar()" label="Menu">
+        <i class="pi pi-ellipsis-v"></i>
+    </button>
+}
+
+@if(visibleSidebar && isMobile){
+    <p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000" styleClass="custom-sidebar" dismissible="true" showCloseIcon="false">
+        <ng-template pTemplate="header">
+            <div class="sidebar-header">
+                <button pButton type="button" (click)="toggleSidebar()" label="CloseMenu">
+                    <i class="pi pi-times"></i>
+                </button>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+            <app-menu-list></app-menu-list>
+        </ng-template>
+    </p-sidebar>
+}

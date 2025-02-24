@@ -1,0 +1,36 @@
+.p-datatable .p-datatable-header {
+  background-color: var(--azul-tono5);
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.p-datatable .p-datatable-thead > tr > th {
+  background: var(--verde-tono4);
+  border: 1px solid var(--gob-mx-gris-tono5);
+  border-right: none;
+  border-left: none;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border: 1px solid var(--gob-mx-gris-tono5);
+  border-right: none;
+  border-left: none;
+}
+
+.p-datatable.p-datatable-scrollable > .p-datatable-wrapper > .p-datatable-table > .p-datatable-thead,
+.p-datatable.p-datatable-scrollable > .p-datatable-wrapper > .p-datatable-table > .p-datatable-tfoot,
+.p-datatable.p-datatable-scrollable
+  > .p-datatable-wrapper
+  > .p-scroller-viewport
+  > .p-scroller
+  > .p-datatable-table
+  > .p-datatable-thead,
+.p-datatable.p-datatable-scrollable
+  > .p-datatable-wrapper
+  > .p-scroller-viewport
+  > .p-scroller
+  > .p-datatable-table
+  > .p-datatable-tfoot {
+  background: transparent;
+}

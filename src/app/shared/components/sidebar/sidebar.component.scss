@@ -1,0 +1,45 @@
+.desktop-sidebar {
+  background-color: var(--blanco-tono1);
+  color: var(--guinda-tono1);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  min-height: calc(100vh - 8rem);
+  position: sticky;
+  overflow-y: auto;
+}
+
+.menu-button{
+  position: fixed;
+  top: 6.5rem;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: var(--gob-mx-pr-verd-tono2);
+  z-index: 20;
+
+  i {
+    font-size: 2rem;
+    color: var(--blanco-tono1);
+  }
+}
+
+.custom-sidebar > .p-sidebar-header{
+  justify-content: end;
+  color: var(--gris-tono5);
+}
+
+.sidebar-header{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  
+  button{
+    background: transparent;
+    border: none;
+    padding: 0;
+
+    i{
+      color: var(--negro-tono2);
+      font-size: 2rem;
+    }
+  }
+}

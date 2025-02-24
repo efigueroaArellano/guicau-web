@@ -1,0 +1,69 @@
+.custom-file-upload {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  > div {
+    width: 100%;
+  }
+}
+
+.custom-file-upload-label {
+  color: var(--gris-tono2);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.custom-file-upload-icon {
+  color: var(--amarillo-tono6);
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.file-upload-info {
+  color: var(--gris-tono2);
+  font-size: 0.875rem;
+  text-align: center !important;
+  margin-top: 10px;
+}
+
+.margin-rounded {
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 1px solid var(--azul-tono12);
+  opacity: 1;
+  margin-left: 20px;
+  padding: 0.3rem;
+}
+
+.buttons-crud {
+  height: 38px;
+  width: 100px;
+}
+
+.control-label {
+  word-break: break-all;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+::ng-deep .p-fileupload-buttonbar {
+  display: none;
+}
+
+::ng-deep .p-fileupload .p-fileupload-content,
+::ng-deep .p-fileupload .p-fileupload-content .file-upload-info {
+  padding: 1rem 1rem !important;
+  border: 1px dashed var(--gris-tono3);
+  border-radius: 1rem;
+}
+
+::ng-deep .hide-prime-upload .p-fileupload-row {
+  display: none !important;
+}

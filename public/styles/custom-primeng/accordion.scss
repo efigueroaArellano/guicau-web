@@ -1,0 +1,73 @@
+.p-accordion
+  .p-accordion-header:not(.p-disabled)
+  .p-accordion-header-link:focus {
+  box-shadow: none;
+  border: none !important;
+}
+
+.p-accordion .p-accordion-content {
+  background-color: transparent;
+  color: var(--gris-tono8);
+  border: none !important;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  text-decoration: none;
+  border: none !important;
+  color: var(--negro-tono3) !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+// Estilo para acordion en modal de aprobaciones
+.p-accordion .dx .p-accordion-header .p-accordion-header-link {
+  text-decoration: none;
+  border: none !important;
+  color: var(--negro-tono3) !important;
+  font-weight: 600;
+  background-color: var(--nombreproyecto-verde-tono1) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.p-accordion .dx .p-accordion-header .p-accordion-header-link .pi-chevron-down {
+  background-color: var(--nombreproyecto-verde-tono1) !important;
+  color: var(--siasc-blue-tono3) !important;
+  font-size: 17px;
+  padding: 1rem;
+  border-radius: 50%;
+  border: solid 1px;
+}
+
+.p-accordion .dx .p-accordion-header .p-accordion-header-link .pi-chevron-up {
+  background-color: var(--nombreproyecto-verde-tono1) !important;
+  color: var(--siasc-blue-tono3) !important;
+  font-size: 17px;
+  padding: 1rem;
+  border-radius: 50%;
+  border: solid 1px;
+}
+
+//***************************
+
+.p-accordion .p-accordion-header .p-accordion-icon {
+  background-color: var(--nombreproyecto-verde-tono1);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link .pi-chevron-down {
+  background-color: var(--siasc-blue-tono2) !important;
+  color: var(--siasc-blue-tono3) !important;
+  font-size: 17px;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link .pi-chevron-up {
+  background-color: var(--siasc-blue-tono2) !important;
+  color: var(--siasc-blue-tono3) !important;
+  font-size: 17px;
+  padding: 1rem;
+  border-radius: 50%;
+}

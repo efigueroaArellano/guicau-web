@@ -1,0 +1,37 @@
+.container-principal {
+    position: relative;
+    background: var(--guinda-tono1);
+    min-height: 11.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -0.5vh;
+        left: 0;
+        right: 0;
+        height: 1vh;
+        background-color: var(--dorado-tono3);
+    }
+}
+
+td, img {
+  margin-right: 12rem;
+  
+}
+
+@media (max-width: 950px) {
+    td, img {
+      max-width: 100%;
+      max-height: 90%;
+      margin: 0;
+      margin-right: 2rem;
+    }
+
+    .container-principal  {
+      // display: none;
+      // max-width: 400px; 
+    }
+  }

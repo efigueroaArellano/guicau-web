@@ -1,0 +1,43 @@
+<header class="pt-5">
+    <div class="inner-header container">
+        <div class="content-header">
+            <div>
+                <div>
+                  <span class="texto-header" >
+                    Vida Saludable <span class="texto-header-complemento"> | Sistema para Reportes</span>
+                  </span>
+                </div>
+            </div>
+
+            @if(usuarioSesion$ | async; as usuario) {
+            <div class="div-menu">
+                <div class="div-menu">
+                  <div>
+                    <p-avatar class="p-avatar-usuarioSesion" [label]="getInicialesUsuario(usuario)" shape="circle" size="xlarge"></p-avatar>
+                  </div>
+                  <div class="flex flex-column px-4 py-1">
+                    <span class="username">{{ usuario.nombre + ' ' + usuario.apellidoPaterno + ' ' + (usuario.apellidoMaterno ? usuario.apellidoMaterno : '') }}</span>
+                    <span class="username-detail">{{ 'Escuela: ' }} {{ usuario.roles[0].cveEscuela}} {{' - '}} {{usuario.roles[0].nomEscuela}} {{ ' - Turno '}} {{usuario.roles[0].refTurno}}</span>
+                  </div>
+                </div>
+                <div>
+        
+                  <button pButton class="p-button-rounded menu-burger" [matMenuTriggerFor]="menu">
+                    <i class="pi pi-chevron-down icon-size"></i>
+                  </button>
+        
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item class="menu-item sellect-item salir" (click)="cerrarSesion()">
+                      <i class="pi pi-sign-out icon-size"></i>
+                      <span>&nbsp; Cerrar Sesión</span>
+                    </button>
+                  </mat-menu>
+                </div>
+              </div>
+            }
+        </div>
+    </div>
+</header>
+
+
+

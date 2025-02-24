@@ -1,0 +1,53 @@
+.p-dialog .p-dialog-content {
+  min-height: 5em;
+  // border-top: none !important;
+}
+
+.p-dialog .p-dialog-header {
+  // background: var(--gob-mx-gris-tono5);
+  // border-top: 1em solid var(--azul-tono6);
+  // background-color: var(--gob-mx-base-blanco);
+  border-bottom: solid 1px var(--blanco-tono5);
+}
+
+.p-dialog-error .p-dialog-header {
+  border-top: 1.5rem solid var(--rojo-tono1);
+}
+
+.p-dialog-alert .p-dialog-header {
+  border-top: 1.5rem  solid var(--verde-tono5);
+}
+
+.p-dialog-success .p-dialog-header {
+  border-top: 1.5rem solid var(--azul-tono1);
+}
+
+.p-dialog-warning .p-dialog-header {
+  border-top: 1.5rem  solid var(--verde-tono3);
+}
+
+.p-dialog-responsibility .p-dialog-header {
+  border-bottom: 1rem solid var(--guinda-tono2);
+}
+
+.p-dialog-successful .p-dialog-header {
+  height: 130px;
+  background-color: var(--verde-tono12);
+}
+
+.p-dialog .p-dialog-footer {
+  // background: var(--gob-mx-gris-tono5);
+  padding: 1rem;
+}
+
+.p-button {
+  color: var(--gob-mx-pr-gris-tono1) !important;
+  background-color: transparent !important;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .p-dialog {
+    width: 95% !important;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="col-md-12 paginador">
+        <p-paginator 
+            [rows]="size"
+            #p
+            [totalRecords]="totalElements"
+            [showFirstLastIcon]="false"
+            (onPageChange)="onPageChange($event)">
+        </p-paginator>
+    </div>
+</div>

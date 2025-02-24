@@ -1,0 +1,86 @@
+:root {
+
+  /*
+    Esta sección contiene los colores base que ofrece en cdn de gob.mx 
+    https://www.gob.mx/guias/grafica/
+  */
+
+  //Grises
+  --gob-mx-gris-tono1: #717A8D;
+  --gob-mx-gris-tono2: #6f7271;
+  --gob-mx-gris-tono3: #a9a8a9;
+  --gob-mx-gris-tono4: #dddddd;
+  --gob-mx-gris-tono5: #f6f6f6;
+  --gob-mx-gris-tono6: #212529;
+  --gob-mx-gris-tono7: #e0e0e0;
+
+  //Institucional IMSS
+  --gob-mx-pr-imss-tono1: #006455;
+
+  //Primarios
+  --gob-mx-pr-dor-header: #A47E34;
+  --gob-mx-pr-dor-tono1: #bc955c;
+  --gob-mx-pr-dor-tono2: #ddc9a3;
+  --gob-mx-pr-verd-tono1: #10312b;
+  --gob-mx-pr-verd-tono2: #235b4e;
+  --gob-mx-pr-verd-tono3: #08865C;
+  --gob-mx-pr-rojo-tono1: #691c32;
+
+  --gob-mx-pr-rojo-tono2: #9f2241;
+  --gob-mx-pr-gris-tono1: #6f7271;
+  --gob-mx-pr-gris-tono2: #98989a;
+  --gob-mx-pr-gris-tono3: #E8ECFA;
+
+  //Adicionales
+  --gob-mx-ad-rojo: #9d2449;
+  --gob-mx-ad-verde-H1: #0c231e;
+  --gob-mx-ad-verde-H2: #13322b;
+  --gob-mx-ad-verde-ations: #28878D;
+  --gob-mx-ad-verde-tono2: #0F9B9B;
+  --gob-mx-pr-dorado-cta: #b38e5d;
+
+  //Base
+  --gob-mx-base-blanco: #ffffff;
+  --gob-mx-base-blanco-card: rgb(250, 250, 250);
+  --gob-mx-base-negro: #000000;
+}
+
+.gob-mx-gris-tono1 {
+  color: var(--gob-mx-gris-tono1) !important;
+}
+
+.gob-mx-gris-tono2 {
+  color: var(--gob-mx-gris-tono2) !important;
+}
+
+.gob-mx-gris-tono3 {
+  color: var(--gob-mx-gris-tono3) !important;
+}
+
+.gob-mx-gris-tono4 {
+  color: var(--gob-mx-gris-tono4) !important;
+}
+
+.gob-mx-gris-tono5 {
+  color: var(--gob-mx-gris-tono5) !important;
+}
+
+.gob-mx-pr-imss-tono1 {
+  color: var(--gob-mx-pr-imss-tono1) !important;
+}
+
+.gob-mx-pr-dor-tono1 {
+  color: var(--gob-mx-pr-dor-tono1) !important;
+}
+
+.gob-mx-base-blanco {
+  color: var(--gob-mx-base-blanco) !important;
+}
+
+.gob-mx-pr-verd-tono2 {
+  color: var(--gob-mx-pr-verd-tono2) !important;
+}
+
+.bg-gob-mx-pr-verd-tono2 {
+  background-color: var(--gob-mx-pr-verd-tono2) !important;
+}

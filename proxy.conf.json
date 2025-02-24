@@ -1,0 +1,22 @@
+{
+    "/mscmov-autenticacion-riepweb": {
+        "target": "https://riep-qa.apps.ocp.imss.gob.mx",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+
+    "/mscmov-usuarios-riepweb": {
+        "target": "https://riep-qa.apps.ocp.imss.gob.mx",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+
+    "/mscmov-reporte-riepweb": {
+        "target": "https://riep-qa.apps.ocp.imss.gob.mx",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}

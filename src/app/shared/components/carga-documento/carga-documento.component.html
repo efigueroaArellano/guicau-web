@@ -1,0 +1,62 @@
+<ng-container>
+    <label class="control-label">Carga documentos</label>
+    <p-fileUpload #fileUpload mode="advanced" name="cargarDocumento"
+        (onSelect)="handleFileSelect($event)"
+        multiple="true"
+        accept="application/pdf,text/xml"
+        [maxFileSize]="maxFileSize"
+        chooseLabel="Cargar"
+        [customUpload]="true"
+        [showUploadButton]="false"
+        [showCancelButton]="true"
+        styleClass="hide-prime-upload">
+        <ng-template pTemplate="content" *ngIf="!readOnly">
+            <div *ngIf="archivosCargados.length > 0">
+                <div *ngFor="let archivo of archivosCargados; let i = index">
+                    <div class="row py-2">
+                        <div class="flex">
+                            <div class="col-md-12 margin-rounded">
+                                <div *ngIf="archivo.type === 'application/pdf'" class="col-md-3">
+                                    <img src="./../../../../../assets/images/icons/icon_pdf.svg" alt="logo footer" width="25" />
+                                </div>
+                                <div *ngIf="archivo.type === 'text/xml' || archivo.type === 'application/xml'" class="col-md-3">
+                                    <img src="./../../../../../assets/images/icons/icon_excel.svg" alt="logo footer" width="25" />
+                                </div>
+                                <div class="col-md-8 pt-3">
+                                    <label class="control-label">{{archivo.name}}</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 pt-3 pr-0 pl-2" *ngIf="!readOnly && archivo.size !== 0">
+                                <i class="pi pi-times" style="color: red; cursor: pointer;" (click)="confirmarEliminarArchivo(i)"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="!readOnly && archivosCargados.length < maximoArchivos" class="custom-file-upload">
+                <ng-container [ngTemplateOutlet]="cargarArchivo"></ng-container>
+            </div>
+        </ng-template>
+    </p-fileUpload>
+
+    <div class="file-upload-info text-right">
+        Formato permitido: PDF o XML con un peso máximo de 5 MB. {{ archivosCargados.length || 0 }}/{{ maximoArchivos }} archivos subidos
+    </div>
+</ng-container>
+
+<ng-template #cargarArchivo>
+    <div class="row" [class.disabled]="readOnly">
+        <div class="flex text" style="justify-content: center;">
+            <div (click)="triggerFileInputClick()">
+                <div class="col-sm-12">
+                    <em class="pi pi-upload"></em>
+                </div>
+                <div class="col-sm-12">
+                    <span class="custom-file-upload-label">Selecciona el archivo o arrastra y suelta aquí</span>
+                </div>
+            </div>
+            <input type="file" #fileInput style="display: none;" [disabled]="readOnly" (change)="handleFileInput($event)" multiple>
+        </div>
+    </div>
+</ng-template>

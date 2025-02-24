@@ -1,0 +1,17 @@
+<div class="card container mb-4 px-4">
+    <div class="row py-3">
+      <div class="col-md-6">
+        <label class="label-sub-header-ruta">
+          @if (isMostrarAtras) {
+              <img class="cursor-pointer" src="./../../../../../assets/images/iconos/back.svg" alt="" (click)="regresar()"/>&nbsp;
+          }
+          <span class="bar">|&nbsp;</span><span [innerHTML]="titulo"></span>
+      </label>
+      </div>
+
+      <div class="col-md-6 mensajeInfo">
+        <span [innerHTML]="mensajeInfo"></span>
+      </div>
+    </div>
+    
+</div>

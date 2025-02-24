@@ -1,0 +1,32 @@
+@if (control && control.invalid && (control.dirty || control.touched)) {
+    @switch (errorKey) {
+        @case ('required') {
+            <small class="text-danger">{{ msgRequerido }}</small>
+        }
+        @case ('invalidEmail') {
+            @if (control.value.trim != '') {
+                <small class="text-danger">{{ msgEstructuraCorreo }}</small>
+            }
+        }
+        @case ('curpInvalid') {
+            @if (control.value.trim != '') {
+                <small class="text-danger">{{ msgEstructuraCURP }}</small>
+            }
+        }
+        @case ('nssInvalid') {
+            @if (control.value.trim != '') {
+                <small class="text-danger">{{ msgEstructuraNSS }}</small>
+            }
+        }
+        @case ('empiezaCero') {
+            @if (control.value.trim != '') {
+                <small class="text-danger">{{ msgValorCero }}</small>
+            }
+        }
+        @case ('uuidInvalid') {
+            @if (control.value.trim != '') {
+                <small class="text-danger">{{ msgEstructuraCFDI }}</small>
+            }
+        }
+    }
+}

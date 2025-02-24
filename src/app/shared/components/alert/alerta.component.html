@@ -1,0 +1,20 @@
+<div class="{{ message.severity }} align-items-center">
+    <!-- <div class="alert-icon">
+        @if (message.severity === 'success'){
+                <img
+                    src="assets/images/icons/alert-success.svg"
+                    alt="" />
+        }
+        @if (message.severity === 'error'){
+                <img
+                    src="assets/images/icons/alert-error.svg"
+                    alt="" />
+        }
+        @if (message.severity === 'warn'){
+                <img src="assets/images/icons/alert-warn.svg" alt="" />
+        }
+    </div> -->
+    <div class="flex align-items-center flex-column">
+        <p class="alert-details" [innerHTML]="message.detail"></p>
+    </div>
+</div>

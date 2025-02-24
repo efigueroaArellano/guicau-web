@@ -1,0 +1,353 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Imports */
+@import "../public/styles/directiva-general-estilos";
+@import "../public/styles/custom-primeng";
+
+$font-familyChido: "Patria","noso Sans", "Helvetica", "Arial", sans-serif;
+$font-family: "Montserrat", Arial, Helvetica, sans-serif;
+$border-radius: 2rem;
+$transition-duration: 0.3s;
+$primary-color: #0d6efd;
+$bg-body: #F9F9F9;
+
+/* Clases raíz */
+html, body {
+    // font-family: $font-family;
+    background-color: $bg-body !important;
+}
+
+:host {
+    display: block;
+}
+
+/* Containers */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-principal {
+    display: flex;
+}
+
+/* Links */
+.link-text {
+    // text-decoration: underline;
+    color: $primary-color !important;
+    cursor: pointer;
+}
+
+/* Botones */
+button {
+
+    padding: 8px 16px;
+    border-radius: $border-radius;
+    color: var(--blanco-tono1);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    // border: 1px solid var(--verde-tono1);
+    // background-color: var(--verde-tono1);
+    transition: background-color $transition-duration;
+
+    // &:hover {
+    // background-color: darken(#36B1B9, 10%);
+    // }
+
+    &.button-danger {
+        background-color: var(--rojo-tono2);
+        border-color: var(--rojo-tono4);
+        color: var(--rojo-tono4);
+
+        &:hover {
+            color: var(--blanco-tono1);
+            background-color: var(--rojo-tono4);
+        }
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &.button-primary {
+        color: var(--verde-tono5);
+        background-color: var(--verde-tono4);
+        border: 1px solid var(--verde-tono1);
+
+        &:hover {
+            background-color: darken(#C9E8E3, 10%); // darken no permite uso de var
+            // color: white;
+            // border: 1px solid var(--verde-tono1); 
+        }
+    }
+
+    &.button-secondary {
+
+        background-color: transparent;
+        border: 1px solid var(--guinda-tono1);
+        color: var(--guinda-tono1);
+
+        &:hover {
+            color: var(--blanco-tono1);
+            background-color: lighten(#611232, 20%); // lighten no permite uso de var
+        }
+
+        // &:disabled {
+        //     background-color: var(--guinda-disable);
+        //     color: var(--guinda-tono3);
+        //     cursor: not-allowed; 
+        //     opacity: 0.5; 
+        //   }
+        
+        //   &:disabled:hover {
+        //     background-color: var(--gris-claro); 
+        //     color: var(--gris-oscuro);
+        //     cursor: not-allowed;
+        //   }
+    }
+
+    &.button-tertiary {
+
+        background-color: transparent;
+        color: var(--gob-mx-pr-gris-tono2);
+        border: 1px solid var(--gob-mx-pr-gris-tono2);
+
+        &:hover {
+            background-color: lighten(#6f7271, 45%); // lighten no permite uso de var
+        }
+    }
+
+    &.button-actions {
+        background-color: var(--guinda-actions);
+        border: 1px solid var(--guinda-actions);
+        color: var(--guinda-tono3);
+
+        &:hover {
+            color: var(--blanco-tono1);
+            background-color: lighten(#611232, 20%); // lighten no permite uso de var
+        }
+    }
+    
+
+    .accionBoton    {
+        min-width: 100%;
+    }
+
+    &.button-success {
+
+        background-color: var(--verde-tono5);
+        border: 1px solid var(--verde-tono5);
+        color: var(--blanco-tono1);
+
+        &:hover {
+            color: var(--blanco-tono1);
+            // background-color: lighten(#006455, 20%);
+        }
+    }
+}
+
+/* Customizados */
+.card-custom {
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px var(--negro-tono1);
+    border: 0, 0, 1px solid var(--blanco-tono2);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--guinda-tono1);
+}
+
+input[type="radio"] {
+    accent-color: var(--guinda-tono1);
+}
+
+input[type="text"]::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+}
+
+select {
+    height: 37px !important;
+    padding: 0px 12px 0px 12px !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+}
+
+select option:disabled {
+    color: var(--rojo-tono6) !important;
+}
+
+.req::after {
+    content: " *";
+}
+
+hr {
+    width: 100%;
+    height: 1.5px;
+    opacity: 1;
+    background-color: var(--dorado-tono1);
+}
+
+.dynamic-dialog-footer {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+/* Miscellaneous */
+.main-footer {
+    display: none !important;
+}
+
+.navbar {
+    display: none !important;
+}
+
+.paginador  {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    background-color: var(--gris-tono12);
+    margin-top: 0.2rem;
+}
+
+
+//   CHECKBOX
+
+#check input:checked ~ .checkmark {
+    background-color: #00a99d;
+    }
+  /* Contenedor */
+  .contenedor {
+    display: flex;
+    align-items: center;
+    position: relative;
+    // padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  /* escondemos el default checkbox */
+  .contenedor input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* creamos un custom checkbox */
+  .checkmark {
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color:white;
+    border: 2px solid #36B1B9;
+    border-radius: 5px;
+    // margin-top: 0.5rem;
+  }
+  
+  
+  /* creamos el marcador (paloma) */
+  .checkmark:after {
+    content: "";
+    display: none;
+    margin: auto;
+  }
+  
+  /* mostramos el marcador al seleccionar (paloma)*/
+  .contenedor input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* estilo del marcador (paloma)*/
+  .contenedor .checkmark:after {
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+//   RADIO BUTTON
+
+/* Estilo básico para el botón de radio */
+input[type="radio"] {
+    accent-color: var(--gob-mx-pr-verd-tono3);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* Efecto al pasar el mouse */
+  input[type="radio"]:hover {
+    background-color: #f0f0f0;
+  
+  }
+
+//   menu-item sellect-item
+//   style="background: #F4FDFE; border-top: 2px solid #E3F3F4;"
+
+  .menu-burger {
+    background-color: var(--gob-mx-pr-dor-header);
+    border: none;
+  }
+
+  .menu-item    {
+    border-radius: 5% 5% 5% 5%!important;
+    margin-top: 0;
+    background: #F4FDFE !important;
+    color: #7781A5;
+  }
+
+  .mat-mdc-menu-content {
+    margin: 0% !important;
+    padding: 0% !important;
+    outline: 0% !important;
+}
+
+.mat-mdc-menu-content :hover{ 
+    background-color: #00a99d !important;
+    color: white !important;
+  } 
+
+
+  .p-avatar-usuarioSesion .p-avatar {
+    background-color:#F5F6F7;
+    color: #353C57;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

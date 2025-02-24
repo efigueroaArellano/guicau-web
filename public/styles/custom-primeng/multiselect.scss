@@ -1,0 +1,38 @@
+.p-multiselect {
+  border: 2px solid var(--gob-mx-base-blanco);
+}
+.p-multiselect-label.p-inputtext.p-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+  color: var(--gob-mx-gris-tono1);
+}
+.p-multiselect .p-multiselect-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+  color: var(--gob-mx-gris-tono2);
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+  color: var(--gob-mx-gris-tono2);
+  border: 1px solid var(--gob-mx-base-blanco);
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+  background-color: var(--gob-mx-base-blanco);
+  color: var(--gob-mx-gris-tono2);
+  font-weight: 500;
+}
