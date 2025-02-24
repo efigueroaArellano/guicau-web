@@ -1,8 +1,7 @@
 .video  {
     padding-top: 2rem;
     margin-left: 0rem;
-    // min-width: 100%;
-    min-height: 50px !important;
+    max-width: 100%;
     background-color: black;
 }
 
@@ -19,4 +18,17 @@
 .textoPresentacion  {
     color: white;
     margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .video  {
+        padding-top: 0rem;
+        max-width: 100%;
+        background-color: black;
+    }
+
+    .principalText   {
+        background-color: black;
+        font-size: 40px !important;
+    }
 }
