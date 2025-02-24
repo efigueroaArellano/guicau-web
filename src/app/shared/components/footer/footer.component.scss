@@ -1,10 +1,11 @@
 .container-principal {
     position: relative;
-    background: var(--guinda-tono1);
+    background: black;
     min-height: 11.5vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    border-top: solid 5px var(--cau-dorado);  
+    // align-items: center;
+    // justify-content: center;
 
     &::before {
         content: '';
@@ -13,14 +14,22 @@
         left: 0;
         right: 0;
         height: 1vh;
-        background-color: var(--dorado-tono3);
+        background-color: var(--cau-dorado);
     }
 }
 
-td, img {
-  margin-right: 12rem;
-  
+.imgCau   {
+  max-width: 100px;
+  max-height: 100px;
 }
+
+.textFooter {
+  color: white;
+}
+// td, img {
+//   margin-right: 12rem;
+  
+// }
 
 @media (max-width: 950px) {
     td, img {

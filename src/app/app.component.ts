@@ -6,15 +6,14 @@ import { AlertaComponent } from './shared/components/alert/alerta.component';
 import { TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerComponent } from 'ngx-spinner';
 import { SidebarModule } from 'primeng/sidebar';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { LoaderComponent } from './shared/components/loader/loader.component';
+import { HeaderComponent } from "./shared/components/header/header.component";
 
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, AlertaComponent, ToastModule, NgxSpinnerComponent, SidebarModule, FooterComponent, LoaderComponent],
+    imports: [RouterOutlet, AlertaComponent, ToastModule, NgxSpinnerComponent, SidebarModule, FooterComponent, HeaderComponent, FooterComponent, ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     providers: [MessageService]
